@@ -73,25 +73,25 @@ int main(int argc, char** argv)
     
     Logger_LogInfo( "Setting\n ");
     
-    eps_setHighVoltageDisconnect( 14.4 );
-    eps_setChargingLimitVoltage( 14.2 );
-    eps_setOverVoltageReconnect( 14.2 );
+    eps_setHighVoltageDisconnect( 14.4 );   sleep( 1 );
+    eps_setChargingLimitVoltage( 14.2 );       sleep( 1 );
+    eps_setOverVoltageReconnect( 14.2 );   sleep( 1 );
     
-    eps_setEqualizationVoltage( 14.1 );
-    eps_setBoostingVoltage( 14.1 );
-    eps_setFloatingVoltage( 13.7 );
-    eps_setBoostReconnectVoltage( 13.3 );
+    eps_setEqualizationVoltage( 14.1 );   sleep( 1 );
+    eps_setBoostingVoltage( 14.1 );   sleep( 1 );
+    eps_setFloatingVoltage( 13.7 );   sleep( 1 );
+    eps_setBoostReconnectVoltage( 13.3 );   sleep( 1 );
     
-    eps_setLowVoltageReconnectVoltage( 11.5 );
-    eps_setLowVoltageWarningRecoverVoltage( 11.5 );
-    eps_setLowVoltageWarningVoltage( 11.5 );
-    eps_setLowVoltageDisconnectVoltage( 11.5 );
-    eps_setDischargingLimitVoltage( 11.5 );
+    eps_setLowVoltageReconnectVoltage( 11.5 );   sleep( 1 );
+    eps_setLowVoltageWarningRecoverVoltage( 11.5 );   sleep( 1 );
+    eps_setLowVoltageWarningVoltage( 11.5 );   sleep( 1 );
+    eps_setLowVoltageDisconnectVoltage( 11.5 );   sleep( 1 );
+    eps_setDischargingLimitVoltage( 11.5 );   sleep( 1 );
     
-    eps_setBoostDuration( 120 );
-    eps_setEqualizeDuration( 120 );
+    eps_setBoostDuration( 120 );   sleep( 1 );
+    eps_setEqualizeDuration( 120 );   sleep( 1 );
     
-    eps_setTemperatureCompensationCoefficient( 2 );
+    eps_setTemperatureCompensationCoefficient( 2 );   
 
     Logger_LogInfo( "After\n" );
     
